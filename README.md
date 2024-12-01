@@ -139,3 +139,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [OWASP Secure Headers Project](https://owasp.org/www-project-secure-headers/)
 - [Mozilla Web Security Guidelines](https://infosec.mozilla.org/guidelines/web_security)
+
+## todo
+
+how can i build this in to a firewall ?
+checking eevery request goign in an coming out and adding behavior if conditions aren't meant ?
+maybe an all in one next.js security plugin
+logging
+obersvaibility
+auth
+author
+visualization
+sentry agent
