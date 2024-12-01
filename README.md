@@ -1,36 +1,141 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# HeaderSentry
 
-## Getting Started
+<div align="center">
+  <h3>Real-time Security Header Analysis Tool</h3>
+  <p>Analyze, understand, and implement web security headers with confidence.</p>
 
-First, run the development server:
+  [![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue.svg)](https://www.typescriptlang.org/)
+  [![Next.js](https://img.shields.io/badge/Next.js-14.0-black.svg)](https://nextjs.org/)
+  [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+  ![Stage](https://img.shields.io/badge/stage-beta-orange)
+</div>
+
+## 🚀 Quick Start
 
 ```bash
+# Clone the repository
+git clone https://github.com/dmc2015/header-sentry.git
+
+# Navigate to the project
+cd header-sentry
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛡️ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Real-time Header Analysis**: Instantly check any website's security headers
+- **Comprehensive Coverage**: Analysis of 10 critical security headers
+- **Educational Context**: Learn about each header's purpose and importance
+- **Implementation Guidance**: Get practical code snippets and best practices
 
-## Learn More
+## 🔧 Technology Stack
 
-To learn more about Next.js, take a look at the following resources:
+- Framework: [Next.js 14](https://nextjs.org/)
+- Language: [TypeScript](https://www.typescriptlang.org/)
+- Styling: [Tailwind CSS](https://tailwindcss.com/)
+- Icons: [Lucide](https://lucide.dev/)
+- Development Tools:
+  - ESLint
+  - Prettier
+  - Jest (Coming Soon)
+  - Cypress (Coming Soon)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📖 Documentation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Project Structure
+```
+header-sentry/
+├── app/                    # Next.js app directory
+│   ├── api/               # API routes
+│   │   └── check-headers/ # Header checking endpoint
+│   └── page.tsx          # Main page
+├── components/            # React components
+│   ├── header-checker.tsx
+│   └── header-result.tsx
+├── types/                # TypeScript types
+│   └── headers.ts       # Header definitions
+└── tests/               # Test files (Coming Soon)
+```
 
-## Deploy on Vercel
+### Security Headers Analyzed
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+HeaderSentry analyzes the following security headers:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Content-Security-Policy (CSP)**
+   - Prevents XSS attacks
+   - Controls resource loading
+
+2. **Strict-Transport-Security (HSTS)**
+   - Enforces HTTPS
+   - Prevents downgrade attacks
+
+3. **X-Frame-Options**
+   - Prevents clickjacking
+   - Controls frame embedding
+
+[View full list in documentation](docs/HEADERS.md)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/dmc2015/header-sentry.git
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start the development server
+```bash
+npm run dev
+```
+
+### Testing
+
+```bash
+# Run unit tests
+npm test
+
+# Run e2e tests
+npm run test:e2e
+
+# Run all tests
+npm run test:all
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+### Development Process
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [OWASP Secure Headers Project](https://owasp.org/www-project-secure-headers/)
+- [Mozilla Web Security Guidelines](https://infosec.mozilla.org/guidelines/web_security)
