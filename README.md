@@ -151,3 +151,106 @@ auth
 author
 visualization
 sentry agent
+
+
+--------
+
+---
+title: header-sentry
+description: HeaderSentry helps developers secure their web applications by analyzing HTTP security headers in real-time. The tool checks for ten essential security headers, explains each header's purpose and security implications, and provides clear implementation guidance for developers.
+date: "2024-12-01"
+url: https://header-sentry.vercel.app
+published: true
+repository: "dmc2015/header-sentry"
+---
+
+<div class="flex items-center space-x-5">
+  <span>
+    <img src="/header-sentry-logo.svg" alt="HeaderSentry" width="300" height="300"/>
+  </span>
+  <span>
+    Strengthen your web application's security posture by analyzing, understanding, and implementing critical security headers. HeaderSentry provides real-time analysis, educational insights, and practical implementation guidance for developers and security professionals.
+  </span>
+</div>
+
+###### Instant Security Analysis
+Check your website's security headers in real-time and get immediate feedback on your security posture
+
+###### Educational Insights
+Learn about each security header's purpose, risks it mitigates, and when to implement it
+
+###### Implementation Guidance
+Get practical, copy-paste ready code snippets for proper security header implementation
+
+###### Situational Context
+Understand when and why each security header is needed with clear, contextual explanations
+
+## Key Features
+
+### 🛡️ Comprehensive Security Scanning
+- Real-time analysis of 10 critical security headers
+- Visual indicators for present/missing headers
+- Priority-based recommendations
+- Situational context for each header
+
+### 📚 Developer Education
+- Detailed explanations of security risks
+- Real-world vulnerability examples
+- Best practices for implementation
+- Use-case specific guidance
+
+### 💻 Developer Experience
+- Clean, intuitive interface
+- Copy-ready implementation snippets
+- Batch URL processing
+- Exportable results
+
+## Technology Stack
+
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide
+- **API**: Edge Runtime
+- **Testing**: Jest, Cypress (Coming Soon)
+
+## Security Headers Analyzed
+
+| Header | Protection | Priority |
+|--------|------------|----------|
+| Content-Security-Policy | XSS, Injection Attacks | Critical |
+| Strict-Transport-Security | MITM Attacks | Critical |
+| X-Frame-Options | Clickjacking | High |
+| X-Content-Type-Options | MIME Sniffing | Medium |
+| Permissions-Policy | Feature Control | High |
+| Referrer-Policy | Information Leakage | Medium |
+| Cross-Origin Headers | Resource Isolation | Medium |
+| Cache-Control | Data Exposure | Medium |
+| Clear-Site-Data | Data Cleanup | Medium |
+
+## Roadmap
+
+### Q1 2024
+- [ ] Advanced header value validation
+- [ ] Security score calculation
+- [ ] PDF report generation
+- [ ] CI/CD integration
+
+### Q2 2024
+- [ ] Batch URL processing
+- [ ] Custom header rules
+- [ ] API access
+- [ ] Team collaboration features
+
+## Made With
+
+- 💡 Modern web security principles
+- 🚀 Performance-first architecture
+- 🎯 Developer-centric design
+- 📊 Real-time analysis
+
+## Open Source
+
+HeaderSentry is open source and welcomes contributions. Whether you're fixing bugs, improving documentation, or adding new features, your contributions are welcome.
+
+Visit [github.com/dmc2015/header-sentry](https://github.com/dmc2015/header-sentry) to contribute.
